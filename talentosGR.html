@@ -2,33 +2,79 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>TalentosGR</title>
-  <link href="talentosGR.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TalentosGR</title>
+    <link href="talentosGR.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <script src="talentosGR.js"></script>
-  <form>
-    <div class="informacoes-pessoais">
-        <h3 id="tituloIformacoesPessoais">Informações Pessoais</h3>
-        
-    </div>
-    
-    <div>
-        Dominike
-    </div>
-    
-    <div>
-        Bel
-    </div>
-    
-    <div>
-        Bruna
-    </div>
-  </form>
- 
+    <script src="talentosGR.js"></script>
+    <form>
+        <div class="informacoes-pessoais">
+            <h3 id="tituloIformacoesPessoais">Informações Pessoais</h3>
+            <label for="fnome">Nome Completo</label><br>
+            <input type="text" id="fnome" name="fnome" required><br><br>
+
+            <label for="ldate">Data de Nascimento</label><br>
+            <input type="date" id="lname" name="ldate" required><br><br>
+
+            <label for="genero">Gênero</label><br>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="nao-binario" name="genero" value="nao-binario">
+            <label for="nao-binario">Não Binário</label>
+            <input type="radio" id="outros" name="genero" value="outros">
+            <label for="outros">Outros</label><br><br>
+
+
+            <label>Estado Civil</label><br>
+            <select name="select">
+                <option value="solteiro" selected>Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="separado">Separado(a)</option>
+                <option value="divorciado">Divorcido(a)</option>
+                <option value="viuvo">Viúvo(a)</option>
+            </select>
+
+
+        </div>
+
+        <div id="endereco">
+            <h3 id="tituloIformacoesContato">Informações de Contato</h3>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" maxlength="9" required>
+            <button type="button" onclick="getEndereco()">Procurar por CEP</button><br><br>
+
+            <label for="logradouro">Rua:</label>
+            <input type="text" id="logradouro" name="logradouro" readonly><br>
+
+            <label for="numero">Número:</label>
+            <input type="text" id="numero" name="numero" readonly><br>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" readonly><br>
+
+            <label for="localidade">Cidade:</label>
+            <input type="text" id="localidade" name="localidade" readonly><br>
+
+            <label for="uf">UF:</label>
+            <input type="text" id="uf" name="uf" readonly><br><br>
+
+        </div>
+
+        <div>
+            Bel
+        </div>
+
+        <div>
+            Bruna
+        </div>
+    </form>
+
 </body>
 
 </html>
