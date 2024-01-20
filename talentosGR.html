@@ -72,34 +72,75 @@
 
         </div>
 
-        <div>
-            <div class="informacoes-profissionais">
-                <h3 id="tituloInformacoesProfissionais">Informações Profissionais</h3>
-    
-                <label for="experiencias_anteriores">Expêriencias Anteriores</label><br>
-                <textarea></textarea><br><br>
+        <div class="informacoes-profissionais">
+            <h3 id="tituloInformacoesProfissionais">Experiências profissionais</h3>
+      
+            <select name="cargo-desejado" id="cargo-desejado">
+              <option value="QA">QA</option>
+              <option value="desenvolvedor-backend">Desenvolvedor Backend</option>
+              <option value="desenvolvedor-frontend">Desenvolvedor Frontend</option>
+              <option value="dados">Dados</option>
+              <option value="desenvolvedor-wordPress">Desenvolvedor WordPress</option>
+              <option value="devops">Devops</option>
+            </select>
+      
+      <br>
+      <br>
+            <label for="experiencia-anterior">Experiência anteriores: </label>
+            <input type="text" name="experiencia-anterior" id="experiencia-anterior">
+      
+            <br>
+            <br>
+      
+            <label for="expectativa-salarial">Expectativa salarial: </label>
+            <input type="number" name="expectativa-salarial" id="expectativa-salarial">
+           
+              
+          </div>
+          
+          <div class="habilidades-tecnicas">
+            <h3 id="tituloHabilidadesTecnicas">Habilidades Técnicas</h3>
+            <p>Conhecimento nas Linguagens:</p>
+      
+            <input type="checkbox" name="java" id="java">
+            <label for="java">JAVA</label>
+      
+            <input type="checkbox" name="c#" id="c#">
+            <label for="c#">C#</label>
+            
+            <input type="checkbox" name="python" id="python">
+            <label for="python">Python</label>
+      
+            <input type="checkbox" name="javaScript" id="javascript">
+            <label for="javascript">JavaScript</label>
+      
+            <input type="checkbox" name="sql" id="sql">
+            <label for="sql">SQL</label>
+      
+            <br>
+            <br>
+      
+            <label for="ferramentas-tecnologias">Outras ferramentas e tecnologias conhecidas:</label>
+            <br>
+            <br>
+            <textarea name="ferramentas-tecnologias" id="ferramentas-tecnologias" cols="30" rows="5"></textarea>
+      
+            <br>
+            <br>
+      
+            <label for="certificacoes">Faça o upload de uma certificação com maior peso sua:</label>
+            <br>
+            <br>
+            <input type="file" name="certificacoes" id="certificacoes">
+          </div>
 
-                <label for="cargo_desejado">Cargo Desejado</label><br>
-                <input type="radio" id="frontend" name="cargo_desejado" value="frontend">
-                <label for="frontend">Frontend</label>
-                <input type="radio" id="backend" name="cargo_desejado" value="backend">
-                <label for="backend">Backend</label>
-                <input type="radio" id="quality_assurance" name="cargo_desejado" value="quality_assurance">
-                <label for="quality_assurance">Quality Assurance(QA)</label>
-                <input type="radio" id="mobile" name="cargo_desejado" value="mobile">
-                <label for="mobile">Mobile</label><br><br>   
-                
-                <label for="expectativa_salarial">Expectativa Salarial</label><br>
-                <input type="number" id="salario" name="salario" required>
-                
-            </div> 
-        </div>
+          <br>
+          <button>Enviar Formulário</button>
 
-        <div>
-            Bruna
-        </div>
     </form>
 
 </body>
+
+    <script src="talentosGR.js"></script>
 
 </html>

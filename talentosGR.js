@@ -25,4 +25,10 @@ function getEndereco() {
             console.error('Erro ao obter dados da API: ', error);
             alert('Entrada inválida. Insira apenas números.');
         });
+
+    const btn = document.querySelector();
+
+    btn.addEventListener('click', function() {
+        alert("Formulário Enviado com Sucesso!");
+    })
 }
