@@ -53,7 +53,7 @@
             <input type="text" id="logradouro" name="logradouro" readonly><br>
 
             <label for="numero">Número:</label>
-            <input type="text" id="numero" name="numero" readonly><br>
+            <input type="text" id="numero" name="numero" maxlength="5" required><br>
 
             <label for="bairro">Bairro:</label>
             <input type="text" id="bairro" name="bairro" readonly><br>
@@ -73,7 +73,26 @@
         </div>
 
         <div>
-            Bel
+            <div class="informacoes-profissionais">
+                <h3 id="tituloInformacoesProfissionais">Informações Profissionais</h3>
+    
+                <label for="experiencias_anteriores">Expêriencias Anteriores</label><br>
+                <textarea></textarea><br><br>
+
+                <label for="cargo_desejado">Cargo Desejado</label><br>
+                <input type="radio" id="frontend" name="cargo_desejado" value="frontend">
+                <label for="frontend">Frontend</label>
+                <input type="radio" id="backend" name="cargo_desejado" value="backend">
+                <label for="backend">Backend</label>
+                <input type="radio" id="quality_assurance" name="cargo_desejado" value="quality_assurance">
+                <label for="quality_assurance">Quality Assurance(QA)</label>
+                <input type="radio" id="mobile" name="cargo_desejado" value="mobile">
+                <label for="mobile">Mobile</label><br><br>   
+                
+                <label for="expectativa_salarial">Expectativa Salarial</label><br>
+                <input type="number" id="salario" name="salario" required>
+                
+            </div> 
         </div>
 
         <div>
