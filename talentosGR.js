@@ -26,7 +26,7 @@ function getEndereco() {
             alert('Entrada inválida. Insira apenas números.');
         });
 
-    const btn = document.querySelector();
+    const btn = document.getElementById('enviarForm');
 
     btn.addEventListener('click', function() {
         alert("Formulário Enviado com Sucesso!");
