@@ -20,7 +20,7 @@ function getEndereco() {
             }
         })
         .catch(error => {
-            alert('CEP inválido. Tente novamente!');
+            alert('CEP inválido! Tente novamente.');
             throw error
         });
 
