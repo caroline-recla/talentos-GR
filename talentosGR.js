@@ -18,10 +18,9 @@ function getEndereco() {
                 localidadeInput.value = data.localidade;
                 ufInput.value = data.uf;
             }
-            alert("CEP não encontrado!");
         })
         .catch(error => {
-            alert('Entrada inválida. Digite apenas números.');
+            alert('CEP inválido. Tente novamente.');
             throw error
         });
 }
