@@ -1,0 +1,96 @@
+#hero{
+    background-image: url(/img/hero-bg.png);
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+header{
+    min-width: 100vw;
+}
+
+#menu{
+    background-color: var(--cor-cinza);
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+#social{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#social li:nth-child(4){
+    margin-top: 1px;
+    margin-left: -1px;
+}
+
+#contacts{
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    gap: 15px;
+}
+
+#contacts li:nth-child(1) p::before{
+    content: '';
+    background-image: url(/img/phone.svg);
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    margin-right: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(90deg);
+    filter: invert(100%) sepia(4%) saturate(17%) hue-rotate(128deg) brightness(104%) contrast(107%);
+}
+
+#contacts li:nth-child(3):before{
+    content: '';
+    background-image: url(/img/mail.svg);
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(100%) sepia(4%) saturate(17%) hue-rotate(128deg) brightness(104%) contrast(107%);
+}
+
+#contacts img{
+    margin-top: 5px;
+}
+
+#hero ul{
+    display: flex;
+    padding-top: 120px;
+    padding-left: 100px;
+    gap: 50px;
+}
+
+#hero ul li:nth-child(1) img{
+    width: 250px;
+}
+
+#hero ul li:nth-child(2) img{
+    width: 250px;
+}
+
+#hero-action{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    text-align: right;
+}
+
+#hero-action h1{
+    font-weight: 300;
+}
+
+#hero-action h2{
+    font-weight: 300;
+}

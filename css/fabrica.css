@@ -1,0 +1,25 @@
+#fabrica{
+    display: flex;
+    max-height: 100vh;
+    background: linear-gradient(90deg, rgba(10,16,25,1) 0%, rgba(10,16,25,1) 100%);
+}
+
+#fabrica img{
+    object-fit: cover;
+    max-width: 40%;
+    min-height: 40%;
+}
+
+#fabrica-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 80px 50px 80px 50px;
+}
+
+#fabrica p{
+    padding-top: 50px;
+    font-size: 1.563rem;
+    font-weight: 200;
+    max-width: 50vw;
+}

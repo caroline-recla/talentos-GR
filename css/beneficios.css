@@ -1,0 +1,23 @@
+#beneficios{
+    display: flex;
+    background: linear-gradient(90deg, rgba(10,16,25,1) 0%, rgba(10,16,25,1) 100%);
+}
+
+#beneficios img{
+    object-fit: cover;
+    min-width: 30%;
+    min-height: 50%;
+}
+
+#beneficios-text{
+    padding: 80px 50px 80px 50px;
+}
+
+#beneficios p{
+    font-size: 1.563rem;
+    font-weight: 200;
+}
+
+#beneficios ul{
+    padding-top: 50px;
+}

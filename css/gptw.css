@@ -1,0 +1,25 @@
+#gptw{
+    display: flex;
+    gap: 7px;
+    max-height: 100vh;
+    max-width: 100vw;
+    background: linear-gradient(90deg, rgba(255,122,0,1) 0%, rgba(255,122,0,1) 100%);
+}
+
+#gptw img{
+    object-fit: cover;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+#gptw-text{
+    text-align: right;
+    padding: 80px 50px 80px 50px;
+    min-width: 300px;
+}
+
+#gptw p{
+    padding-top: 50px;
+    font-size: 1.563rem;
+    font-weight: 200;
+}
