@@ -17,13 +17,11 @@ function getEndereco() {
                 bairroInput.value = data.bairro;
                 localidadeInput.value = data.localidade;
                 ufInput.value = data.uf;
-            } else {
-                alert('CEP não encontrado. Verifique e tente mais uma vez.');
             }
         })
         .catch(error => {
-            console.error('Erro ao obter dados da API: ', error);
-            alert('Entrada inválida. Insira apenas números.');
+            alert('CEP inválido. Tente novamente!');
+            throw error
         });
 
     const btn = document.getElementById('enviarForm');
