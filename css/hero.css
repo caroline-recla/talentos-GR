@@ -9,11 +9,27 @@ header{
     min-width: 100vw;
 }
 
+#hero a,
+p, h1, h2, h3 {
+    font-family: "Spline Sans", sans-serif;
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+#menu a,
+p, h1, h2, h3 {
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
 #menu{
     background-color: var(--cor-cinza);
     display: flex;
+    position: fixed;
     justify-content: space-around;
+    width: 100vw;
     padding: 5px;
+    z-index: 999;
 }
 
 #social{
@@ -29,9 +45,13 @@ header{
 
 #contacts{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content:left;
     gap: 15px;
+}
+
+#contacts li:nth-child(1){
+    margin-top: -2px;
 }
 
 #contacts li:nth-child(1) p::before{
@@ -41,10 +61,15 @@ header{
     width: 17px;
     height: 17px;
     margin-right: 3px;
+    margin-top: -3px;
     display: inline-block;
     vertical-align: middle;
     transform: rotate(90deg);
     filter: invert(100%) sepia(4%) saturate(17%) hue-rotate(128deg) brightness(104%) contrast(107%);
+}
+
+#contacts li:nth-child(3){
+    margin-top: -4px;
 }
 
 #contacts li:nth-child(3):before{
@@ -54,6 +79,7 @@ header{
     width: 17px;
     height: 17px;
     margin-right: 7px;
+    margin-top: -2px;
     display: inline-block;
     vertical-align: middle;
     filter: invert(100%) sepia(4%) saturate(17%) hue-rotate(128deg) brightness(104%) contrast(107%);
@@ -61,6 +87,25 @@ header{
 
 #contacts img{
     margin-top: 5px;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login a::before{
+    content: '';
+    background-image: url(/img/avatar.svg);
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+    margin-top: -2px;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(100%) sepia(4%) saturate(17%) hue-rotate(128deg) brightness(200%) contrast(107%);
 }
 
 #hero ul{
