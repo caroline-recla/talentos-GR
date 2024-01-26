@@ -2,24 +2,26 @@
     display: flex;
     min-height: 100vh;
     max-width: 100vw;
-    background: linear-gradient(45deg, rgba(0,182,225,1) 0%, rgba(0,133,178,1) 100%);
+    background: var(--cor-branco)
 }
 
 #banco img{
     object-fit: cover;
-    min-width: 50%;
+    min-width: 40%;
 }
 
 #banco-text{
     display: flex;
     flex-direction: column;
+    align-items: end;
     justify-content: center;
     padding: 100px 100px 0px 100px;
 }
 
 #banco h3{
-    text-align: right;
+    text-align: left;
     padding-bottom: 50px;
+    color: var(--cor-laranja);
 }
 
 #banco p{
@@ -27,17 +29,21 @@
     font-size: 1.875rem;
     font-weight: 200;
     padding-bottom: 70px;
+    color: var(--cor-cinza);
 }
 
 #banco a{
-    z-index: 999;
-    color: var(--cor-laranja);
-    padding: 15px;
     text-align: center;
+    color: var(--cor-branco);
+    padding: 15px 30px 15px 30px;
+    width: fit-content;
     font-size: 1.563rem;
-    font-weight: 600;
     border-radius: 50px;
-    background: linear-gradient(135deg, rgb(255, 255, 255) 0%, rgba(207,206,206,1) 100%);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background: var(--cor-laranja);
+}
+
+#banco a:hover{
+    transform: scale(1.02);
+    transition: all 0.1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
